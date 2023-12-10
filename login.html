@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florism/Login</title>
+    <link rel="stylesheet" type="text/css" href="css/gaya.css">
+    <script src="js/scriptLog.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <div class="isian">
+        <h1> Welcome To Florism</h1>
+        
+    </div>
+    <div class="form">
+        <img src="css/Asset/florism.jpeg">
+        <h1>welcome To Florism</h1>
+        <h3>Please Sign In</h3>
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="Password"><br>
+        <input id="login" onclick="hasil()" type="submit" value="Login"><br>
+    <h4>Belum Punya Akun?</h4>
+    <button id="signup" onclick="signup()">Sign Up</button>
+    </div>
+    
+</body>
+<script>
+   const scrollRevealOption = {
+            origin: "right",
+            distance: "500px",
+            duration: 500,
+            delay: 0,
+            opacity: 0,
+            scale: 0.8,
+            easing: "cubic-bezier(0.5, 0, 0, 1)",
+        };
+        ScrollReveal().reveal(".form", scrollRevealOption);
+
+        const reveal = {
+            origin: "left",
+            distance: "1500px",
+            duration: 800,
+            delay: 0,
+            opacity: 0,
+            scale: 0.8,
+            easing: "cubic-bezier(0.5, 0, 0, 1)",
+        };
+        ScrollReveal().reveal(".top", reveal);
+</script>
+</html>

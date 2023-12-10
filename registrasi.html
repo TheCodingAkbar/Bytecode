@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florism/Registrasi</title>
+    <link rel="stylesheet" type="text/css" href="css/regcss.css">
+    <script src="js/scriptReg.js"></script>
+</head>
+<body>
+    <div class="form">
+        <h3>ayam</h3>
+       <h1>Lanjutkan Pembayaran</h1>
+       <div class="formsatu">
+       <div class="form1">
+       <h2>Nama :</h2>
+       <input type="text" placeholder="Nama"><br>
+       <h2>Email :</h2>
+       <input type="text" placeholder="Email"><br>
+       </div>
+       <div class="form2">
+        <h2>No Handphone :</h2>
+        <input type="text" placeholder="No Handphone"><br>
+        <h2>Total Harga :</h2>
+        <label for="totalhg"></label>
+        <input type="text" id="totalhg" name="jenisKelamin" readonly> <br>
+        <input id="signin" onclick="pembayaran()" type="submit" value="Bayar">   
+       <button  onclick="pesanan()">Kembali</button>
+        </div>
+        <div class="baner">
+       <h1>Jelajahi Wisata Alam Di Sekitarmu Bersama Florism</h1>
+
+        </div>
+       </div>
+    </div>
+    <div id="notifp" class="notif">
+        <h1>Berhasil Dipesan</h1>
+        <button onclick="kembali()">Lihat Pesanan</button>
+    </div>
+</body>
+<script>
+function pembayaran(){
+const notf = document.getElementById('notifp')
+    notf.style.transform=("translateY(130px)")
+}
+
+function kembali(){
+    window.location.href=("tiket.html")
+}
+</script>
+</html>

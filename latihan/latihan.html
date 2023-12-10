@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Notifikasi</title>
+</head>
+<body>
+
+<button onclick="sendMessage('halo')">Tekan Tombol</button><br>
+<button onclick="sendMessage('ada yang menekan tombol')">Tekan Tombol</button>
+
+<script>
+  function sendMessage(isi) {
+    // Ganti "YOUR_TOKEN" dengan token bot Anda
+    var token = '6840383948:AAEodXZh8lL9HPKbf6YhLjtO4PthDIr21tM';
+    // Ganti "YOUR_CHAT_ID" dengan ID obrolan Anda
+    var chatId = '1285492346';
+    var message = isi;
+
+    // Kirim pesan menggunakan metode fetch
+    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${message}`)
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+  }
+</script>
+
+</body>
+</html>

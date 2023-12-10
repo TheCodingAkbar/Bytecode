@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <script src="js/scriptProfile.js"></script>
+    <title>Florism/Profle</title>
+</head>
+    <header>
+        <img id='img-click' src="css/Asset/florism.jpeg">
+        <ul>
+            <li><button id="home" onclick="ketiket()">Ticket</button></li>
+            <li><button id="home" onclick="kegallery()">Gallery</button></li>
+            <li><button id="home" onclick="keprofile()">Profile</button></li>
+            <li><button id="logout" onclick="kelogout()">Logout</button></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>Profile</h1>
+        <div class="profile-pic">
+            <img src="css/Asset/Profile.jpg"alt="">
+        </div>
+        <div class="details">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" value="">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="">
+            <label for="phone">No Handphone:</label>
+            <input type="text" id="phone" name="phone" value="">
+            <label for="gender">Jenis Kelamin:</label>
+            <input type="text" id="gender" name="gender" value="">
+            <button>Save Details</button>
+        </div>
+    </div>
+</body>
+</html>

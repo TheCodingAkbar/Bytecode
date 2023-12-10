@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florism/Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/gallerycss.css">
+    <script src="js/scriptGal.js"></script>
+</head>
+<body>
+    <header>
+        <img id='img-click' onclick="kehome()" src="css/Asset/florism.jpeg">
+
+        <div class="searchbar">
+            <input type="text" id="searchBarWisata" placeholder="Cari Wisata">
+            <button onclick="searchWisata()">Cari</button>
+        </div>
+        
+        <ul><li><button id="home" onclick="kekeranjang()">Keranjang</button></li>
+            <li><button id="home" onclick="ketiket()">Ticket</button></li>
+            <li><button id="home" onclick="kegallery()">Gallery</button></li>
+            <li><button id="home" onclick="keprofile()">Profile</button></li>
+            <li><button id="logout" onclick="kelogout()">Logout</button></li>
+        </ul>
+    </header>
+
+    <div class="konten">
+        <img id="finds" src="css/Asset/find.png">
+        <div class="row1">
+        <div class="listgal">
+            
+            <div onclick="pesan('Obelix Village','css/Asset/obelix.jpg','50000.00')" class="isi">
+            <img  src="css/Asset/obelix.jpg">
+            <h3>Obelix Village Sleman Yogyakarta</h3>
+            <p>&#10026;	 4.8</p>
+            <p>Start From 50k</p>
+           
+            </div>
+            <a  href="#" onclick="lokasio()">&#128962; Location</a><br> 
+           
+     
+        </div>
+
+        <div  class="listgal">
+            <div onclick="pesan('Hutan Pinus Mangunan','css/Asset/pinus.jpg','5000.00')" class="isi">
+            <img id="pinus" src="css/Asset/pinus.jpg">
+            <h3 >Hutan Pinus Mangunan</h3>
+            <p>&#10026;	 4.6</p>
+            <p>Start From 5k</p>
+            
+            </div>
+            <a  href="#" onclick="lokasip()">&#128962; Location</a><br>
+          
+        
+        </div>
+        <div  class="listgal">
+            <div onclick="pesan('Heha Forest','css/Asset/hehaforest.jpg','20000.00')" class="isi">
+            <img id="hforest" src="css/Asset/hehaforest.jpg">
+            <h3>Heha Forestt Kaliurang</h3>
+            <p>&#10026;	 4.2</p>
+            <p>Start From 20k</p>
+           
+            </div>
+            <a  href="#" onclick="lokasih()">&#128962; Location</a><br>
+            
+      
+        </div>
+        <div  class="listgal">
+            <div onclick="pesan('Bhumi Merapi','css/Asset/bumimerapi.jpg','30000.00')" class="isi">
+            <img id="bhumi" src="css/Asset/bumimerapi.jpg">
+            <h3>Bhumi Merapi Kaliurang</h3>
+            <p>&#10026;	 4.5</p>
+            <p>Start From 30k</p>
+            
+            </div>
+            <a  href="#" onclick="lokasib()">&#128962; Location</a><br>
+            
+       
+        </div>
+        <div  class="listgal">
+            <div onclick="pesan('Kebun Buah','css/Asset/kebunbuah.jpg','7000.00')" class="isi">
+            <img  src="css/Asset/kebunbuah.jpg">
+            <h3>Kebun Buah Mangunan</h3>
+            <p>&#10026;	 4.7</p>
+            <p>Start From 7k</p>
+            
+            </div>
+            <a  href="#" onclick="lokasik()">&#128962; Location</a><br>
+       
+        </div>
+        </div>
+        <div  class="row2">
+            <div class="listgal">
+                <div onclick="pesan('Geoforest Watu','css/Asset/watu.jpg','5000.00')" class="isi">
+                <img id="watup" src="css/Asset/watu.jpg">
+                <h3>Geoforest Watu Gunung Kidul</h3>
+                <p>&#10026;	 4.5</p>
+                <p>Start From 5k</p>
+                
+                </div>
+                <a  href="#" onclick="lokasiw()">&#128962; Location</a><br>
+           
+            </div>
+            <div class="listgal">
+                <div onclick="pesan('Mangrove Baros','css/Asset/mangrove.jpg','10000.00')" class="isi">
+                <img id="mangroveb" src="css/Asset/mangrove.jpg">
+                <h3>Mangrove Baros Bantul</h3>
+                <p>&#10026;	 4.3</p>
+                <p>Start From 10k</p>
+                
+                </div>
+                <a  href="#" onclick="lokasibs()">&#128962; Location</a><br>
+          
+            </div>
+            <div class="listgal">
+                <div  onclick="pesan('Danau kalibiru','css/Asset/kalibiru.jpg','10000.00')" class="isi">
+                <img id="dkalibiru"  src="css/Asset/kalibiru.jpg">
+                <h3>Danau Kalibiru Kulonprogo</h3>
+                <p>&#10026;	 4.4</p>
+                <p>Start From 10k</p>
+                
+                </div>
+                <a  href="#" onclick="lokasid()">&#128962; Location</a><br>
+           
+            </div>
+            <div  class="listgal">
+                <div onclick="pesan('Bukit Pengilon','css/Asset/pengilon.jpg','5000.00')" class="isi">
+                <img id="bpengilon" src="css/Asset/pengilon.jpg">
+                <h3>Bukit Pengilon Gunung Kidul</h3>
+                <p>&#10026;	 4.7</p>
+                <p>Start From 5k</p>
+                
+                </div>
+                <a  href="#" onclick="lokasibp()">&#128962; Location</a><br>
+          
+            </div>
+            <div class="listgal">
+                <div onclick="pesan('Selomapioro Park','css/Asset/selomapioro.jpg','10000.00')" class="isi">
+                <img id="pselomapioro"  src="css/Asset/selomapioro.jpg">
+                <h3>Selomapioro Park Bantul</h3>
+                <p>&#10026;	 4.6</p>
+                <p>Start From 10k</p>
+                
+                </div>
+                <a  href="#" onclick="lokasisp()">&#128962; Location</a><br>
+            </div>
+        </div>
+        <div id="searchNotFound"></div>
+    </div>
+    <div id="masking" class="mask">
+    </div>
+    <div id="keran" class="isikeranjang">
+        <h1>Keranjang Tiket Anda</h1>
+        <img onclick="kluar()" src="css/Asset/reject.png">
+        <div class="keranjang">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal</th>
+                        <th>Jumlah</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodykeranjang">
+                  
+                </tbody>
+            </table>
+
+        </div>
+        <button onclick="bayar()" id="tombol">Pembayaran</button>
+    </div>
+
+    
+</body>
+<script>
+       function tampilkanDataKeranjang() {
+        var tbody = document.getElementById("tbodykeranjang");
+        var keranjang = JSON.parse(localStorage.getItem('keranjangTiket')) || [];
+
+        // Loop melalui data keranjang dan tampilkan di tabel
+        keranjang.forEach(function (tiket) {
+            var row = tbody.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+
+            cell1.innerHTML = tiket.namaWisata;
+            cell2.innerHTML = tiket.tanggal;
+            cell3.innerHTML = tiket.jumlah;
+            cell4.innerHTML = tiket.harga;
+            
+            var hapusButton = document.createElement("button");
+    hapusButton.innerHTML = "Hapus";
+    hapusButton.setAttribute("data-index", keranjang.indexOf(tiket));
+    hapusButton.onclick = function() {
+    hapusTiket(this);
+    };
+
+    row.appendChild(hapusButton);
+        });
+    }
+    
+
+    // Panggil fungsi untuk menampilkan data saat halaman dimuat
+    tampilkanDataKeranjang();
+
+    function simpanKeLocalStorage(data) {
+            localStorage.setItem('keranjangTiket', JSON.stringify(data));
+        }
+
+        // Fungsi untuk menghapus tiket dari keranjang
+        function hapusTiket(button) {
+            var index = button.getAttribute("data-index");
+
+            // Ambil data keranjang dari local storage
+            var keranjang = JSON.parse(localStorage.getItem('keranjangTiket')) || [];
+
+            // Hapus tiket berdasarkan index
+            keranjang.splice(index, 1);
+
+            // Simpan kembali ke local storage
+            simpanKeLocalStorage(keranjang);
+
+            // Muat ulang halaman untuk menampilkan perubahan
+            location.reload();
+
+            kekeranjang();
+        }
+
+        var hargaElements = document.querySelectorAll('tbody td:nth-child(4)');
+    
+    // Menghitung total harga
+    var totalHarga = 0;
+    hargaElements.forEach(function(element) {
+        totalHarga += parseInt(element.textContent || element.innerText);
+    });
+
+
+    function bayar(){
+        window.location.href = "registrasi.html?harga=" + encodeURIComponent(totalHarga)
+    }
+
+</script>
+</html>
